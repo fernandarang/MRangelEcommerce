@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15C325789D47B616F3B195E7 /* Pods_MRangelEcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E9D4BAEF259F603912A9CB /* Pods_MRangelEcommerce.framework */; };
+		F360A856295CD0F600AC3CAA /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A855295CD0F600AC3CAA /* Producto.swift */; };
+		F360A858295CD10C00AC3CAA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A857295CD10C00AC3CAA /* Result.swift */; };
+		F360A85A295CD21900AC3CAA /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A859295CD21900AC3CAA /* Area.swift */; };
+		F360A85C295CD22F00AC3CAA /* Proveedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A85B295CD22F00AC3CAA /* Proveedor.swift */; };
+		F360A85E295CD23C00AC3CAA /* Departamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A85D295CD23C00AC3CAA /* Departamento.swift */; };
+		F360A860295CD37300AC3CAA /* ProductoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A85F295CD37300AC3CAA /* ProductoViewModel.swift */; };
+		F3BB3F96295F49A1003B0091 /* GetAllTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB3F95295F49A1003B0091 /* GetAllTableViewController.swift */; };
+		F3BB3F99295F4A87003B0091 /* ProductoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB3F97295F4A87003B0091 /* ProductoTableViewCell.swift */; };
+		F3BB3F9A295F4A87003B0091 /* ProductoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BB3F98295F4A87003B0091 /* ProductoTableViewCell.xib */; };
+		F3BB3F9C295F821E003B0091 /* product.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F3BB3F9B295F821E003B0091 /* product.jpeg */; };
+		F3E6EC31295BC2DB00C0CD18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC30295BC2DB00C0CD18 /* AppDelegate.swift */; };
+		F3E6EC33295BC2DB00C0CD18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC32295BC2DB00C0CD18 /* SceneDelegate.swift */; };
+		F3E6EC35295BC2DB00C0CD18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC34295BC2DB00C0CD18 /* ViewController.swift */; };
+		F3E6EC38295BC2DB00C0CD18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E6EC36295BC2DB00C0CD18 /* Main.storyboard */; };
+		F3E6EC3B295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC39295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodeld */; };
+		F3E6EC3D295BC2DC00C0CD18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E6EC3C295BC2DC00C0CD18 /* Assets.xcassets */; };
+		F3E6EC40295BC2DC00C0CD18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E6EC3E295BC2DC00C0CD18 /* LaunchScreen.storyboard */; };
+		F3E6EC4C295BC38F00C0CD18 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC4B295BC38F00C0CD18 /* DB.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D7E34668F62AA08254847B7 /* Pods-MRangelEcommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRangelEcommerce.debug.xcconfig"; path = "Target Support Files/Pods-MRangelEcommerce/Pods-MRangelEcommerce.debug.xcconfig"; sourceTree = "<group>"; };
+		BD4A42EF604324CAD10FBB98 /* Pods-MRangelEcommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRangelEcommerce.release.xcconfig"; path = "Target Support Files/Pods-MRangelEcommerce/Pods-MRangelEcommerce.release.xcconfig"; sourceTree = "<group>"; };
+		D3E9D4BAEF259F603912A9CB /* Pods_MRangelEcommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRangelEcommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F360A855295CD0F600AC3CAA /* Producto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
+		F360A857295CD10C00AC3CAA /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F360A859295CD21900AC3CAA /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		F360A85B295CD22F00AC3CAA /* Proveedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proveedor.swift; sourceTree = "<group>"; };
+		F360A85D295CD23C00AC3CAA /* Departamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departamento.swift; sourceTree = "<group>"; };
+		F360A85F295CD37300AC3CAA /* ProductoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoViewModel.swift; sourceTree = "<group>"; };
+		F3BB3F95295F49A1003B0091 /* GetAllTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllTableViewController.swift; sourceTree = "<group>"; };
+		F3BB3F97295F4A87003B0091 /* ProductoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoTableViewCell.swift; sourceTree = "<group>"; };
+		F3BB3F98295F4A87003B0091 /* ProductoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductoTableViewCell.xib; sourceTree = "<group>"; };
+		F3BB3F9B295F821E003B0091 /* product.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product.jpeg; sourceTree = "<group>"; };
+		F3E6EC2D295BC2DB00C0CD18 /* MRangelEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRangelEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E6EC30295BC2DB00C0CD18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3E6EC32295BC2DB00C0CD18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F3E6EC34295BC2DB00C0CD18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3E6EC37295BC2DB00C0CD18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3E6EC3A295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MRangelEcommerce.xcdatamodel; sourceTree = "<group>"; };
+		F3E6EC3C295BC2DC00C0CD18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3E6EC3F295BC2DC00C0CD18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3E6EC41295BC2DC00C0CD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E6EC4B295BC38F00C0CD18 /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3E6EC2A295BC2DB00C0CD18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C325789D47B616F3B195E7 /* Pods_MRangelEcommerce.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22A330085F9EE8EEE30D0434 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D7E34668F62AA08254847B7 /* Pods-MRangelEcommerce.debug.xcconfig */,
+				BD4A42EF604324CAD10FBB98 /* Pods-MRangelEcommerce.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E56FFA960791D52F1F961942 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3E9D4BAEF259F603912A9CB /* Pods_MRangelEcommerce.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3E6EC24295BC2DB00C0CD18 = {
+			isa = PBXGroup;
+			children = (
+				F3E6EC2F295BC2DB00C0CD18 /* MRangelEcommerce */,
+				F3E6EC2E295BC2DB00C0CD18 /* Products */,
+				22A330085F9EE8EEE30D0434 /* Pods */,
+				E56FFA960791D52F1F961942 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3E6EC2E295BC2DB00C0CD18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3E6EC2D295BC2DB00C0CD18 /* MRangelEcommerce.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3E6EC2F295BC2DB00C0CD18 /* MRangelEcommerce */ = {
+			isa = PBXGroup;
+			children = (
+				F3E6EC47295BC30400C0CD18 /* Model */,
+				F3E6EC49295BC31D00C0CD18 /* View */,
+				F3E6EC48295BC31000C0CD18 /* ViewModel */,
+				F3E6EC4A295BC32A00C0CD18 /* Controller */,
+				F3E6EC30295BC2DB00C0CD18 /* AppDelegate.swift */,
+				F3E6EC32295BC2DB00C0CD18 /* SceneDelegate.swift */,
+				F3E6EC34295BC2DB00C0CD18 /* ViewController.swift */,
+				F3E6EC3C295BC2DC00C0CD18 /* Assets.xcassets */,
+				F3E6EC3E295BC2DC00C0CD18 /* LaunchScreen.storyboard */,
+				F3E6EC41295BC2DC00C0CD18 /* Info.plist */,
+				F3E6EC39295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodeld */,
+				F3BB3F9B295F821E003B0091 /* product.jpeg */,
+			);
+			path = MRangelEcommerce;
+			sourceTree = "<group>";
+		};
+		F3E6EC47295BC30400C0CD18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F360A855295CD0F600AC3CAA /* Producto.swift */,
+				F360A857295CD10C00AC3CAA /* Result.swift */,
+				F360A859295CD21900AC3CAA /* Area.swift */,
+				F360A85B295CD22F00AC3CAA /* Proveedor.swift */,
+				F360A85D295CD23C00AC3CAA /* Departamento.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3E6EC48295BC31000C0CD18 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3E6EC4B295BC38F00C0CD18 /* DB.swift */,
+				F360A85F295CD37300AC3CAA /* ProductoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3E6EC49295BC31D00C0CD18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3E6EC36295BC2DB00C0CD18 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3E6EC4A295BC32A00C0CD18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB3F95295F49A1003B0091 /* GetAllTableViewController.swift */,
+				F3BB3F97295F4A87003B0091 /* ProductoTableViewCell.swift */,
+				F3BB3F98295F4A87003B0091 /* ProductoTableViewCell.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3E6EC2C295BC2DB00C0CD18 /* MRangelEcommerce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3E6EC44295BC2DC00C0CD18 /* Build configuration list for PBXNativeTarget "MRangelEcommerce" */;
+			buildPhases = (
+				28C9AC12BBFA855057AA77B9 /* [CP] Check Pods Manifest.lock */,
+				F3E6EC29295BC2DB00C0CD18 /* Sources */,
+				F3E6EC2A295BC2DB00C0CD18 /* Frameworks */,
+				F3E6EC2B295BC2DB00C0CD18 /* Resources */,
+				0472E0A9E6AEC387DD667521 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRangelEcommerce;
+			productName = MRangelEcommerce;
+			productReference = F3E6EC2D295BC2DB00C0CD18 /* MRangelEcommerce.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3E6EC25295BC2DB00C0CD18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F3E6EC2C295BC2DB00C0CD18 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F3E6EC28295BC2DB00C0CD18 /* Build configuration list for PBXProject "MRangelEcommerce" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3E6EC24295BC2DB00C0CD18;
+			productRefGroup = F3E6EC2E295BC2DB00C0CD18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3E6EC2C295BC2DB00C0CD18 /* MRangelEcommerce */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3E6EC2B295BC2DB00C0CD18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E6EC40295BC2DC00C0CD18 /* LaunchScreen.storyboard in Resources */,
+				F3BB3F9C295F821E003B0091 /* product.jpeg in Resources */,
+				F3BB3F9A295F4A87003B0091 /* ProductoTableViewCell.xib in Resources */,
+				F3E6EC3D295BC2DC00C0CD18 /* Assets.xcassets in Resources */,
+				F3E6EC38295BC2DB00C0CD18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0472E0A9E6AEC387DD667521 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MRangelEcommerce/Pods-MRangelEcommerce-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MRangelEcommerce/Pods-MRangelEcommerce-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MRangelEcommerce/Pods-MRangelEcommerce-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28C9AC12BBFA855057AA77B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MRangelEcommerce-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3E6EC29295BC2DB00C0CD18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E6EC35295BC2DB00C0CD18 /* ViewController.swift in Sources */,
+				F3E6EC31295BC2DB00C0CD18 /* AppDelegate.swift in Sources */,
+				F3E6EC33295BC2DB00C0CD18 /* SceneDelegate.swift in Sources */,
+				F360A85E295CD23C00AC3CAA /* Departamento.swift in Sources */,
+				F360A856295CD0F600AC3CAA /* Producto.swift in Sources */,
+				F360A858295CD10C00AC3CAA /* Result.swift in Sources */,
+				F3BB3F96295F49A1003B0091 /* GetAllTableViewController.swift in Sources */,
+				F3E6EC4C295BC38F00C0CD18 /* DB.swift in Sources */,
+				F360A85A295CD21900AC3CAA /* Area.swift in Sources */,
+				F360A85C295CD22F00AC3CAA /* Proveedor.swift in Sources */,
+				F3BB3F99295F4A87003B0091 /* ProductoTableViewCell.swift in Sources */,
+				F360A860295CD37300AC3CAA /* ProductoViewModel.swift in Sources */,
+				F3E6EC3B295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3E6EC36295BC2DB00C0CD18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3E6EC37295BC2DB00C0CD18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3E6EC3E295BC2DC00C0CD18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3E6EC3F295BC2DC00C0CD18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3E6EC42295BC2DC00C0CD18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3E6EC43295BC2DC00C0CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3E6EC45295BC2DC00C0CD18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7E34668F62AA08254847B7 /* Pods-MRangelEcommerce.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LB82Q2DXR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MRangelEcommerce/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis01.MRangelEcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3E6EC46295BC2DC00C0CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD4A42EF604324CAD10FBB98 /* Pods-MRangelEcommerce.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LB82Q2DXR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MRangelEcommerce/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis01.MRangelEcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3E6EC28295BC2DB00C0CD18 /* Build configuration list for PBXProject "MRangelEcommerce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E6EC42295BC2DC00C0CD18 /* Debug */,
+				F3E6EC43295BC2DC00C0CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3E6EC44295BC2DC00C0CD18 /* Build configuration list for PBXNativeTarget "MRangelEcommerce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E6EC45295BC2DC00C0CD18 /* Debug */,
+				F3E6EC46295BC2DC00C0CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3E6EC39295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3E6EC3A295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodel */,
+			);
+			currentVersion = F3E6EC3A295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodel */;
+			path = MRangelEcommerce.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F3E6EC25295BC2DB00C0CD18 /* Project object */;
+}

@@ -20,8 +20,8 @@ class DB{
         var db : OpaquePointer? = nil
         
         if sqlite3_open(filePath.path, &db) == SQLITE_OK{
-            print("Conexión Correcta")
-            print(filePath)
+           // print("Conexión Correcta")
+          //  print(filePath)
             return db
         }else{
             print("Error")

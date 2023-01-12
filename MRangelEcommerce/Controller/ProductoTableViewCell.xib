@@ -111,7 +111,7 @@
                 <outlet property="PrecioUnitariolbl" destination="LMe-Bf-g9o" id="Vag-WF-wff"/>
                 <outlet property="Stocklbl" destination="jPe-Ma-she" id="pRq-GD-mYp"/>
             </connections>
-            <point key="canvasLocation" x="340.76923076923077" y="-44.075829383886251"/>
+            <point key="canvasLocation" x="176" y="-6"/>
         </tableViewCell>
     </objects>
     <resources>

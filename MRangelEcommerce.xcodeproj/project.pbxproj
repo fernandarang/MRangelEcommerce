@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		15C325789D47B616F3B195E7 /* Pods_MRangelEcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E9D4BAEF259F603912A9CB /* Pods_MRangelEcommerce.framework */; };
+		F33109282970D691008C278E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33109272970D691008C278E /* GoogleService-Info.plist */; };
+		F331092B2970DD79008C278E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F331092A2970DD79008C278E /* FirebaseAuth */; };
+		F331092E2970E463008C278E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331092D2970E463008C278E /* LoginViewController.swift */; };
+		F33109322970EBBC008C278E /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33109312970EBBC008C278E /* SigninViewController.swift */; };
 		F3600B2E296C86B2006AE0B0 /* GetAllUsuarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3600B2D296C86B2006AE0B0 /* GetAllUsuarioTableViewController.swift */; };
 		F3600B31296C88D7006AE0B0 /* UsuarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3600B2F296C88D7006AE0B0 /* UsuarioTableViewCell.swift */; };
 		F3600B32296C88D7006AE0B0 /* UsuarioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3600B30296C88D7006AE0B0 /* UsuarioTableViewCell.xib */; };
@@ -43,6 +47,9 @@
 		1D7E34668F62AA08254847B7 /* Pods-MRangelEcommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRangelEcommerce.debug.xcconfig"; path = "Target Support Files/Pods-MRangelEcommerce/Pods-MRangelEcommerce.debug.xcconfig"; sourceTree = "<group>"; };
 		BD4A42EF604324CAD10FBB98 /* Pods-MRangelEcommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRangelEcommerce.release.xcconfig"; path = "Target Support Files/Pods-MRangelEcommerce/Pods-MRangelEcommerce.release.xcconfig"; sourceTree = "<group>"; };
 		D3E9D4BAEF259F603912A9CB /* Pods_MRangelEcommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRangelEcommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33109272970D691008C278E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F331092D2970E463008C278E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F33109312970EBBC008C278E /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		F3600B2D296C86B2006AE0B0 /* GetAllUsuarioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllUsuarioTableViewController.swift; sourceTree = "<group>"; };
 		F3600B2F296C88D7006AE0B0 /* UsuarioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioTableViewCell.swift; sourceTree = "<group>"; };
 		F3600B30296C88D7006AE0B0 /* UsuarioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsuarioTableViewCell.xib; sourceTree = "<group>"; };
@@ -82,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C325789D47B616F3B195E7 /* Pods_MRangelEcommerce.framework in Frameworks */,
+				F331092B2970DD79008C278E /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +113,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F331092C2970E441008C278E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F331092D2970E463008C278E /* LoginViewController.swift */,
+				F33109312970EBBC008C278E /* SigninViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		F37D44702968DB10002EA3C0 /* Usuario */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +136,7 @@
 		F3E6EC24295BC2DB00C0CD18 = {
 			isa = PBXGroup;
 			children = (
+				F33109272970D691008C278E /* GoogleService-Info.plist */,
 				F3E6EC2F295BC2DB00C0CD18 /* MRangelEcommerce */,
 				F3E6EC2E295BC2DB00C0CD18 /* Products */,
 				22A330085F9EE8EEE30D0434 /* Pods */,
@@ -188,6 +206,7 @@
 		F3E6EC4A295BC32A00C0CD18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F331092C2970E441008C278E /* Login */,
 				F37D44702968DB10002EA3C0 /* Usuario */,
 				F3BB3F95295F49A1003B0091 /* GetAllTableViewController.swift */,
 				F3BB3F97295F4A87003B0091 /* ProductoTableViewCell.swift */,
@@ -218,6 +237,9 @@
 			dependencies = (
 			);
 			name = MRangelEcommerce;
+			packageProductDependencies = (
+				F331092A2970DD79008C278E /* FirebaseAuth */,
+			);
 			productName = MRangelEcommerce;
 			productReference = F3E6EC2D295BC2DB00C0CD18 /* MRangelEcommerce.app */;
 			productType = "com.apple.product-type.application";
@@ -246,6 +268,9 @@
 				Base,
 			);
 			mainGroup = F3E6EC24295BC2DB00C0CD18;
+			packageReferences = (
+				F33109292970DD79008C278E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F3E6EC2E295BC2DB00C0CD18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3E6EC40295BC2DC00C0CD18 /* LaunchScreen.storyboard in Resources */,
+				F33109282970D691008C278E /* GoogleService-Info.plist in Resources */,
 				F3600B32296C88D7006AE0B0 /* UsuarioTableViewCell.xib in Resources */,
 				F3BB3F9C295F821E003B0091 /* product.jpeg in Resources */,
 				F3BB3F9A295F4A87003B0091 /* ProductoTableViewCell.xib in Resources */,
@@ -322,6 +348,7 @@
 				F3600B31296C88D7006AE0B0 /* UsuarioTableViewCell.swift in Sources */,
 				F3E6EC35295BC2DB00C0CD18 /* ViewController.swift in Sources */,
 				F3C5471E2967647500CAEB45 /* DepartamentoTableViewCell.swift in Sources */,
+				F331092E2970E463008C278E /* LoginViewController.swift in Sources */,
 				F3E6EC31295BC2DB00C0CD18 /* AppDelegate.swift in Sources */,
 				F37D446B2968A51D002EA3C0 /* DepaViewController.swift in Sources */,
 				F3E6EC33295BC2DB00C0CD18 /* SceneDelegate.swift in Sources */,
@@ -338,6 +365,7 @@
 				F3BB3F99295F4A87003B0091 /* ProductoTableViewCell.swift in Sources */,
 				F360A860295CD37300AC3CAA /* ProductoViewModel.swift in Sources */,
 				F37D446D2968C392002EA3C0 /* UsuarioViewModel.swift in Sources */,
+				F33109322970EBBC008C278E /* SigninViewController.swift in Sources */,
 				F37D44722968DB3C002EA3C0 /* UsuarioViewController.swift in Sources */,
 				F3E6EC3B295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodeld in Sources */,
 				F3C5472129676AC500CAEB45 /* DepartamentoViewModel.swift in Sources */,
@@ -560,6 +588,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F33109292970DD79008C278E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F331092A2970DD79008C278E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33109292970DD79008C278E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F3E6EC39295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodeld */ = {

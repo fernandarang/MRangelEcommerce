@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MRangelEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Precio Unitario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-8o-k9N">
@@ -125,7 +125,7 @@
             <objects>
                 <tableViewController id="zW0-a0-DGe" customClass="GetAllTableViewController" customModule="MRangelEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="8k8-hm-l4i">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
@@ -136,7 +136,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="ZJz-Ax-DqL">
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="5e3-nd-Oxt">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="lk7-Cg-yfS">
-                                <rect key="frame" x="274.66666666666669" y="5" width="99.333333333333314" height="34.333333333333336"/>
+                                <rect key="frame" x="274.66666666666669" y="11" width="99.333333333333314" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Agregar +">
@@ -165,7 +165,7 @@
             <objects>
                 <tableViewController id="jb7-5Q-v19" customClass="GetAllDepaTableViewController" customModule="MRangelEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="8au-6u-IBj">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
@@ -176,7 +176,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="sSX-6v-kky">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="2Xs-ye-SUH">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="8bW-OV-jrO">
-                                <rect key="frame" x="274.66666666666669" y="5" width="99.333333333333314" height="34.333333333333336"/>
+                                <rect key="frame" x="274.66666666666669" y="11" width="99.333333333333314" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Agregar +">
@@ -202,7 +202,7 @@
             <objects>
                 <viewController id="2At-5Y-Pev" customClass="DepaViewController" customModule="MRangelEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EHg-ug-eGr">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Nombre del Departamento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GtS-FG-IFJ">
@@ -249,7 +249,7 @@
             <objects>
                 <tableViewController id="lXS-L7-BSm" customClass="GetAllUsuarioTableViewController" customModule="MRangelEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="yKP-Yt-ozU">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
@@ -260,7 +260,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="jT8-a1-wE3">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="2ii-Zq-LoP">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Fjr-Gd-EZf">
-                                <rect key="frame" x="274.66666666666669" y="5" width="99.333333333333314" height="34.333333333333336"/>
+                                <rect key="frame" x="274.66666666666669" y="11" width="99.333333333333314" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Agregar +">
@@ -287,7 +287,7 @@
                 <navigationController id="UK2-I8-HCT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Usuarios" selectedImage="person.fill" catalog="system" id="LEV-G9-3cn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Og-OZ-dCM">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -302,14 +302,14 @@
         <scene sceneID="rPk-Qw-mxQ">
             <objects>
                 <viewController id="Gbx-Fg-qh5" customClass="UsuarioViewController" customModule="MRangelEcommerce" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="i5G-pg-YLz">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="i5G-pg-YLz">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vd-Ip-kWF">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7vd-Ip-kWF">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZN-Vk-Zdy">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QZN-Vk-Zdy">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="1500"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSn-bM-Gpb">
@@ -459,7 +459,7 @@
                 <navigationController id="lhX-o3-fER" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Departamento" selectedImage="list.bullet.rectangle.portrait.fill" catalog="system" id="xhk-88-3lq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c9B-48-ixo">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -470,10 +470,10 @@
             </objects>
             <point key="canvasLocation" x="-1023" y="-1054"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="0oc-Uz-Fcn">
             <objects>
-                <viewController id="zKG-8G-TW6" sceneMemberID="viewController">
+                <viewController id="zKG-8G-TW6" customClass="LoginViewController" customModule="MRangelEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="07u-Vc-gWc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -510,6 +510,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Log In" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" systemColor="systemMintColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="LoginBtn:" destination="zKG-8G-TW6" eventType="touchUpInside" id="qU3-99-CEs"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You don´t have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adt-65-jMS">
                                 <rect key="frame" x="48" y="740" width="192" height="18"/>
@@ -526,7 +529,8 @@
                                     <color key="baseForegroundColor" systemColor="systemMintColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="2X2-8j-ug4" kind="show" identifier="SignIn" id="dyw-Mj-RBC"/>
+                                    <action selector="CreateBtn:" destination="zKG-8G-TW6" eventType="touchUpInside" id="eCG-Ez-y8k"/>
+                                    <segue destination="2X2-8j-ug4" kind="show" id="1yU-Bk-z0f"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqZ-k0-S7d">
@@ -546,15 +550,22 @@
                         <viewLayoutGuide key="safeArea" id="OFG-Zx-SbE"/>
                         <color key="backgroundColor" name="Fondo"/>
                     </view>
+                    <connections>
+                        <outlet property="CreateBtn" destination="hBv-1Y-NmW" id="fCe-Jr-fvW"/>
+                        <outlet property="EmailField" destination="PUs-3T-ru1" id="Pdr-tu-Qrb"/>
+                        <outlet property="LoginBtn" destination="Kpm-UN-ssc" id="vBq-S6-ggC"/>
+                        <outlet property="PasswordField" destination="wOD-aT-qV9" id="lAf-8a-QPj"/>
+                        <segue destination="inc-Ex-akn" kind="show" identifier="LoginSegue" id="8vj-q1-ehI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q15-ip-axt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3362" y="-1322"/>
+            <point key="canvasLocation" x="-3165" y="-1334"/>
         </scene>
-        <!--View Controller-->
+        <!--Signin View Controller-->
         <scene sceneID="q6D-MO-Kcj">
             <objects>
-                <viewController id="2X2-8j-ug4" sceneMemberID="viewController">
+                <viewController id="2X2-8j-ug4" customClass="SigninViewController" customModule="MRangelEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YYb-Rb-9wA">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -571,14 +582,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="b63-V4-xGM">
-                                <rect key="frame" x="77" y="691" width="237" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sing Up" cornerStyle="capsule">
-                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
-                                </buttonConfiguration>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTy-fG-10o">
                                 <rect key="frame" x="32" y="330" width="79" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -605,33 +608,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vG5-PH-Q6j">
-                                <rect key="frame" x="32" y="539" width="196" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="b63-V4-xGM">
+                                <rect key="frame" x="77" y="584" width="237" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="OiX-au-Bef">
-                                <rect key="frame" x="32" y="577" width="327" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign in" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SigninBtn:" destination="2X2-8j-ug4" eventType="touchUpInside" id="snh-O0-wzU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XcN-hg-JJs"/>
                         <color key="backgroundColor" name="Fondo"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pf1-XS-Ljo"/>
+                    <connections>
+                        <outlet property="EmailField" destination="8bh-lG-6Oo" id="Kc5-rY-3NQ"/>
+                        <outlet property="PasswordField" destination="irH-TC-Xjd" id="lbj-gb-1Xd"/>
+                        <outlet property="SigninBtn" destination="b63-V4-xGM" id="HKP-9e-GXN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsN-uA-oa9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3363" y="-636"/>
+            <point key="canvasLocation" x="-3166" y="-673"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9fN-SK-6jB">
             <objects>
                 <tabBarController id="inc-Ex-akn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gXD-65-kpV"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1hN-we-lSc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -645,7 +652,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q2b-vh-xeM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2295" y="-1007"/>
+            <point key="canvasLocation" x="-2052" y="-1009"/>
         </scene>
         <!--Producto-->
         <scene sceneID="Alg-Rh-sTd">
@@ -653,7 +660,7 @@
                 <navigationController id="Mg8-FN-5JT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Producto" selectedImage="basketball.fill" catalog="system" id="jiw-mZ-FrG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Pt-sV-24u">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

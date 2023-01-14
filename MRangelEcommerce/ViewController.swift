@@ -6,68 +6,91 @@
 //
 
 import UIKit
+import iOSDropDown
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-
+    
     @IBOutlet weak var PrecioUnitarioField: UITextField!
     @IBOutlet weak var NombreField: UITextField!
     @IBOutlet weak var StockField: UITextField!
-    @IBOutlet weak var IdProveedorField: UITextField!
+   
     @IBOutlet weak var IdDepartamentoField: UITextField!
     @IBOutlet weak var DescripcionField: UITextField!
     @IBOutlet weak var IdProductoField: UITextField!
     
+    
+    @IBOutlet weak var ProveedorDropDown: DropDown!
+    let proveedorViewModel = ProveedorViewModel()
+    
     @IBOutlet weak var AddButton: UIButton!
     
-    @IBOutlet weak var UpdateButton: UIButton!
     let productoViewModel = ProductoViewModel()
-        var productoModel : Producto? = nil
+    var productoModel : Producto? = nil
     let imagePiker = UIImagePickerController()
     var idProducto : Int? = nil
-    //let imageString : String
+    var idProveedor :Int? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //let getAll = productoViewModel.GetAll()
-        //let getById = productoViewModel.GetById(IdGetById: 3)
-        //IdProductoField.isHidden = false
+        
         let db = DB.init()
         
         imagePiker.delegate = self
         imagePiker.sourceType = .photoLibrary
         imagePiker.isEditing = false
         validar()
+        
+        ProveedorDropDown.optionArray = [String] ()
+        ProveedorDropDown.optionIds = [Int] ()
+        
+        ProveedorDropDown.didSelect { selectedText, index, id in
+           
+            self.idProveedor = id
+                }
+        
+        LoadData()
+        
+    }
+    
+    func LoadData (){
+        let result = proveedorViewModel.GetAll()
+        if result.Correct{
+            for proveedor in result.Objects as! [Proveedor]{
+                ProveedorDropDown.optionArray.append(proveedor.Nombre)
+                ProveedorDropDown.optionIds?.append(proveedor.IdProveedor)
+            }
+        }
     }
     
     func validar(){
-           if idProducto == nil{
-               AddButton.setTitle("Agregar", for: .normal) //Mostrar boton que indique Agregar
-               //Mostar el formulario vacio
-               imageView.image = UIImage(named: "product")
-           }else
-           {
-               AddButton.setTitle("Actualizar", for: .normal)// Mostar buton que inque Actualizar
-               let result = productoViewModel.GetById(IdGetById: idProducto!) //Uso del GetById
-               if result.Correct{
-                   let producto = result.Object as! Producto //Mostar el formulario precargado
-                   NombreField.text = producto.Nombre
-                   PrecioUnitarioField.text = String(producto.PrecioUnitario)
-                   StockField.text = String(producto.Stock)
-                   IdProveedorField.text = String(producto.Proveedor.IdProveedor)
-                   IdDepartamentoField.text = String(producto.Departamento.IdDepartamento)
-                   DescripcionField.text = producto.Descripcion
-                   
-                   if imageView.image == UIImage(named: "") {
-                   imageView.image = UIImage(named: "product")
-                   }else{
-                     //Convertir imagen de BASE64 a DATA
-                   }
-                   
-               }else{
-                   
-               }
-           }
-       }
+        if idProducto == nil{
+            AddButton.setTitle("Agregar", for: .normal) //Mostrar boton que indique Agregar
+            //Mostar el formulario vacio
+            imageView.image = UIImage(named: "product")
+        }else
+        {
+            AddButton.setTitle("Actualizar", for: .normal)// Mostar buton que inque Actualizar
+            let result = productoViewModel.GetById(IdGetById: idProducto!) //Uso del GetById
+            if result.Correct{
+                let producto = result.Object as! Producto //Mostar el formulario precargado
+                NombreField.text = producto.Nombre
+                PrecioUnitarioField.text = String(producto.PrecioUnitario)
+                StockField.text = String(producto.Stock)
+               // IdProveedorField.text = String(producto.Proveedor.IdProveedor)
+                IdDepartamentoField.text = String(producto.Departamento.IdDepartamento)
+                DescripcionField.text = producto.Descripcion
+                
+                if imageView.image == UIImage(named: "") {
+                    imageView.image = UIImage(named: "product")
+                }else{
+                    //Convertir imagen de BASE64 a DATA
+                }
+                
+            }else{
+                
+            }
+        }
+    }
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -96,8 +119,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                 StockField.placeholder = "Ingresa el Stock"
                 return
             }
-            guard let IdProveedor = IdProveedorField.text, IdProveedor != "" else{
-                IdProveedorField.placeholder = "Ingresa el IdProveedor"
+            guard let ProveedorD = ProveedorDropDown.text , ProveedorD != "" else{
+                ProveedorDropDown.placeholder = "Ingresa el IdProveedor"
                 return
             }
             guard let IdDepartamento = IdDepartamentoField.text, IdDepartamento != "" else{
@@ -110,14 +133,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             }
             let image = imageView.image!
             let imageString : String
-                    if imageView.restorationIdentifier == "product"{
-                        imageString = ""
-                    }else{
-                        let imageData = image.pngData()! as NSData
-                        imageString = imageData.base64EncodedString(options: .lineLength64Characters)
-                    }
+            if imageView.restorationIdentifier == "product"{
+                imageString = ""
+            }else{
+                let imageData = image.pngData()! as NSData
+                imageString = imageData.base64EncodedString(options: .lineLength64Characters)
+            }
             
-            productoModel = Producto(IdProducto: 0, Nombre: Nombre, PrecioUnitario: Double(PrecioUnitario)!, Stock: Int(Stock)!, Descripcion: Descripcion, Imagen: imageString, Proveedor: Proveedor(IdProveedor: Int(IdProveedor)!, Nombre: "", Telefono: ""), Departamento: Departamento(IdDepartamento: Int(IdDepartamento)!, Nombre: "", Area: Area(IdArea: 0, Nombre: "")))
+            productoModel = Producto(IdProducto: 0, Nombre: Nombre, PrecioUnitario: Double(PrecioUnitario)!, Stock: Int(Stock)!, Descripcion: Descripcion, Imagen: imageString, Proveedor: Proveedor(IdProveedor: Int(idProveedor!), Nombre: "", Telefono: ""), Departamento: Departamento(IdDepartamento: Int(IdDepartamento)!, Nombre: "", Area: Area(IdArea: 0, Nombre: "")))
             
             let result = productoViewModel.Add(producto: productoModel!)
             
@@ -125,11 +148,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                 let alert = UIAlertController(title: "Confirmación", message: "Producto agregado correctamente", preferredStyle: .alert)
                 //let ok = UIAlertAction(title: "OK", style: .default)
                 let Aceptar = UIAlertAction(title: "Aceptar", style: .default,handler:
-                   { action in
+                                                { action in
                     self.NombreField.text = ""
                     self.PrecioUnitarioField.text = ""
                     self.StockField.text = ""
-                    self.IdProveedorField.text = ""
+                    self.ProveedorDropDown.text = ""
                     self.IdDepartamentoField.text = ""
                     self.DescripcionField.text = ""
                 })
@@ -159,8 +182,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                 StockField.placeholder = "Ingresa el Stock"
                 return
             }
-            guard let IdProveedor = IdProveedorField.text, IdProveedor != "" else{
-                IdProveedorField.placeholder = "Ingresa el IdProveedor"
+            guard let ProveedorD = ProveedorDropDown.text, ProveedorD != "" else{
+                ProveedorDropDown.placeholder = "Ingresa el IdProveedor"
                 return
             }
             guard let IdDepartamento = IdDepartamentoField.text, IdDepartamento != "" else{
@@ -171,33 +194,33 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                 DescripcionField.placeholder = "Ingresa la Descripcion"
                 return
             }
-           // let idProducto = IdProductoField.text!
-               // IdProductoField.placeholder = "Ingresa el IdProducto"
-               // return
+            // let idProducto = IdProductoField.text!
+            // IdProductoField.placeholder = "Ingresa el IdProducto"
+            // return
             
             let image = imageView.image!
             let imageString : String
-                    if imageView.restorationIdentifier == "product"{
-                        imageString = ""
-                    }else{
-                        let imageData = image.pngData()! as NSData
-                        imageString = imageData.base64EncodedString(options: .lineLength64Characters)
-                    }
+            if imageView.restorationIdentifier == "product"{
+                imageString = ""
+            }else{
+                let imageData = image.pngData()! as NSData
+                imageString = imageData.base64EncodedString(options: .lineLength64Characters)
+            }
             
-            productoModel = Producto(IdProducto: Int(idProducto!), Nombre: Nombre, PrecioUnitario: Double(PrecioUnitario)!, Stock: Int(Stock)!, Descripcion: Descripcion, Imagen: imageString, Proveedor: Proveedor(IdProveedor: Int(IdProveedor)!, Nombre: "", Telefono: ""), Departamento: Departamento(IdDepartamento: Int(IdDepartamento)!, Nombre: "", Area: Area(IdArea: 0, Nombre: "")))
+            productoModel = Producto(IdProducto: Int(idProducto!), Nombre: Nombre, PrecioUnitario: Double(PrecioUnitario)!, Stock: Int(Stock)!, Descripcion: Descripcion, Imagen: imageString, Proveedor: Proveedor(IdProveedor: Int(idProveedor!), Nombre: "", Telefono: ""), Departamento: Departamento(IdDepartamento: Int(IdDepartamento)!, Nombre: "", Area: Area(IdArea: 0, Nombre: "")))
             
             //let result = productoViewModel.Update(producto: productoModel!)
-           let result = productoViewModel.Update(producto: productoModel!,IdUpdate: Int(idProducto!))
+            let result = productoViewModel.Update(producto: productoModel!,IdUpdate: Int(idProducto!))
             
             if result.Correct{
                 let alert = UIAlertController(title: "Confirmación", message: "Producto actualizado correctamente", preferredStyle: .alert)
                 //let ok = UIAlertAction(title: "OK", style: .default)
                 let Aceptar = UIAlertAction(title: "Aceptar", style: .default,handler:
-                   { action in
+                                                { action in
                     self.NombreField.text = ""
                     self.PrecioUnitarioField.text = ""
                     self.StockField.text = ""
-                    self.IdProveedorField.text = ""
+                    self.ProveedorDropDown.text = ""
                     self.IdDepartamentoField.text = ""
                     self.DescripcionField.text = ""
                     self.IdProductoField.text = ""
@@ -218,9 +241,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     
     @IBAction func UpdateButton(_ sender: UIButton) {
         
-       
+        
     }
-   
+    
     
     @IBAction func DeleteButton(_ sender: UIButton) {
         
@@ -232,13 +255,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         productoModel = Producto(IdProducto: Int(IdProducto)!, Nombre: "", PrecioUnitario: 0, Stock: 0, Descripcion: "", Imagen: "", Proveedor: Proveedor(IdProveedor: 0, Nombre: "", Telefono: ""), Departamento: Departamento(IdDepartamento: 0, Nombre: "", Area: Area(IdArea: 0, Nombre: "")))
         
         //let result = productoViewModel.Update(producto: productoModel!)
-       let result = productoViewModel.Delete(IdDelete: Int(IdProducto)!)
+        let result = productoViewModel.Delete(IdDelete: Int(IdProducto)!)
         
         if result.Correct{
             let alert = UIAlertController(title: "Confirmación", message: "Producto actualizado correctamente", preferredStyle: .alert)
             //let ok = UIAlertAction(title: "OK", style: .default)
             let Aceptar = UIAlertAction(title: "Aceptar", style: .default,handler:
-               { action in
+                                            { action in
                 
                 self.IdProductoField.text = ""
             })
@@ -254,7 +277,5 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             self.present(alertError, animated: false)
         }
     }
-    
-    
-}
 
+}

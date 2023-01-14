@@ -8,5 +8,5 @@ target 'MRangelEcommerce' do
   # Pods for MRangelEcommerce
   pod 'SwipeCellKit'
   pod 'FirebaseUI'
-  
+  pod 'iOSDropDown'
 end

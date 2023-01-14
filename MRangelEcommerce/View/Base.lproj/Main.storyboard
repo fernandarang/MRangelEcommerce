@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zKG-8G-TW6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="inc-Ex-akn">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -25,12 +25,6 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Stock" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uOw-zh-UlP">
                                 <rect key="frame" x="46" y="378" width="299" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="IdProveedor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tr4-HA-FyD">
-                                <rect key="frame" x="46" y="420" width="299" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -95,6 +89,12 @@
                                     <action selector="btnImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CdP-CF-ZFU"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Selecciona un proveedor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gih-sW-0ZC" customClass="JRDropDown">
+                                <rect key="frame" x="46" y="420" width="299" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -109,9 +109,9 @@
                         <outlet property="DescripcionField" destination="vCo-Fy-yg9" id="54e-xN-mte"/>
                         <outlet property="IdDepartamentoField" destination="cF3-X3-VDO" id="ija-mu-EPm"/>
                         <outlet property="IdProductoField" destination="BBT-AM-pSk" id="uYx-g6-Y2H"/>
-                        <outlet property="IdProveedorField" destination="tr4-HA-FyD" id="FRT-TE-P5e"/>
                         <outlet property="NombreField" destination="p1Q-pW-6c6" id="tkf-Bl-3u2"/>
                         <outlet property="PrecioUnitarioField" destination="G8j-8o-k9N" id="5h7-gS-kJh"/>
+                        <outlet property="ProveedorDropDown" destination="gih-sW-0ZC" id="BHb-HL-fRt"/>
                         <outlet property="StockField" destination="uOw-zh-UlP" id="kNd-ht-slw"/>
                         <outlet property="imageView" destination="BCS-GN-rkQ" id="R7G-E2-jGX"/>
                     </connections>

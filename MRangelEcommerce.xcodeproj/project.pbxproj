@@ -33,6 +33,7 @@
 		F3C5471F2967647500CAEB45 /* DepartamentoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C5471D2967647500CAEB45 /* DepartamentoTableViewCell.xib */; };
 		F3C5472129676AC500CAEB45 /* DepartamentoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5472029676AC500CAEB45 /* DepartamentoViewModel.swift */; };
 		F3C5472329676E4F00CAEB45 /* GetAllDepaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5472229676E4F00CAEB45 /* GetAllDepaTableViewController.swift */; };
+		F3DFA45A2971DF70006C953E /* ProveedorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DFA4592971DF70006C953E /* ProveedorViewModel.swift */; };
 		F3E6EC31295BC2DB00C0CD18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC30295BC2DB00C0CD18 /* AppDelegate.swift */; };
 		F3E6EC33295BC2DB00C0CD18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC32295BC2DB00C0CD18 /* SceneDelegate.swift */; };
 		F3E6EC35295BC2DB00C0CD18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC34295BC2DB00C0CD18 /* ViewController.swift */; };
@@ -71,6 +72,7 @@
 		F3C5471D2967647500CAEB45 /* DepartamentoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepartamentoTableViewCell.xib; sourceTree = "<group>"; };
 		F3C5472029676AC500CAEB45 /* DepartamentoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentoViewModel.swift; sourceTree = "<group>"; };
 		F3C5472229676E4F00CAEB45 /* GetAllDepaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDepaTableViewController.swift; sourceTree = "<group>"; };
+		F3DFA4592971DF70006C953E /* ProveedorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedorViewModel.swift; sourceTree = "<group>"; };
 		F3E6EC2D295BC2DB00C0CD18 /* MRangelEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRangelEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E6EC30295BC2DB00C0CD18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E6EC32295BC2DB00C0CD18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				F360A85F295CD37300AC3CAA /* ProductoViewModel.swift */,
 				F3C5472029676AC500CAEB45 /* DepartamentoViewModel.swift */,
 				F37D446C2968C392002EA3C0 /* UsuarioViewModel.swift */,
+				F3DFA4592971DF70006C953E /* ProveedorViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				F3600B31296C88D7006AE0B0 /* UsuarioTableViewCell.swift in Sources */,
 				F3E6EC35295BC2DB00C0CD18 /* ViewController.swift in Sources */,
 				F3C5471E2967647500CAEB45 /* DepartamentoTableViewCell.swift in Sources */,
+				F3DFA45A2971DF70006C953E /* ProveedorViewModel.swift in Sources */,
 				F331092E2970E463008C278E /* LoginViewController.swift in Sources */,
 				F3E6EC31295BC2DB00C0CD18 /* AppDelegate.swift in Sources */,
 				F37D446B2968A51D002EA3C0 /* DepaViewController.swift in Sources */,

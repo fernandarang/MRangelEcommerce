@@ -9,4 +9,6 @@ target 'MRangelEcommerce' do
   pod 'SwipeCellKit'
   pod 'FirebaseUI'
   pod 'iOSDropDown'
+  pod 'IQKeyboardManagerSwift'
+  
 end

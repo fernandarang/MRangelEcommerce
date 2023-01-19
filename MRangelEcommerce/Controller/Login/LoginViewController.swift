@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 
-class LoginViewController : UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class LoginViewController : UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate{
     
     @IBOutlet weak var EmailField: UITextField!
     @IBOutlet weak var LoginBtn: UIButton!
@@ -21,8 +21,9 @@ class LoginViewController : UIViewController, UIImagePickerControllerDelegate,UI
         
     }
     
+    
     @IBAction func LoginBtn(_ sender: UIButton) {
-        
+       
         if let email = EmailField.text, let password = PasswordField.text {
             Auth.auth().signIn(withEmail: email, password: password){ (result, error) in
                 if let result = result, error == nil {
@@ -34,7 +35,9 @@ class LoginViewController : UIViewController, UIImagePickerControllerDelegate,UI
                     alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
                     self.present(alertController, animated: true)
                 }
+               
             }
+            
         }
         
         

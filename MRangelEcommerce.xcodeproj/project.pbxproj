@@ -21,6 +21,13 @@
 		F360A85C295CD22F00AC3CAA /* Proveedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A85B295CD22F00AC3CAA /* Proveedor.swift */; };
 		F360A85E295CD23C00AC3CAA /* Departamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A85D295CD23C00AC3CAA /* Departamento.swift */; };
 		F360A860295CD37300AC3CAA /* ProductoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A85F295CD37300AC3CAA /* ProductoViewModel.swift */; };
+		F368F39D2975B17B0072FE94 /* AreaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368F39C2975B17B0072FE94 /* AreaViewModel.swift */; };
+		F368F3A12975B6E00072FE94 /* Ropa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F368F3A02975B6E00072FE94 /* Ropa.jpeg */; };
+		F368F3A42975C8C50072FE94 /* Calzado.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F368F3A32975C8C50072FE94 /* Calzado.jpeg */; };
+		F3793162297705E30027D7F2 /* Linea Blanca.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F3793161297705E30027D7F2 /* Linea Blanca.jpeg */; };
+		F379316A297726890027D7F2 /* MRangelEcommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3793169297726890027D7F2 /* MRangelEcommerceUITests.swift */; };
+		F379316C297726890027D7F2 /* MRangelEcommerceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379316B297726890027D7F2 /* MRangelEcommerceUITestsLaunchTests.swift */; };
+		F3793179297726C30027D7F2 /* MRangelEcommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3793178297726C30027D7F2 /* MRangelEcommerceTests.swift */; };
 		F37D446B2968A51D002EA3C0 /* DepaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D446A2968A51D002EA3C0 /* DepaViewController.swift */; };
 		F37D446D2968C392002EA3C0 /* UsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D446C2968C392002EA3C0 /* UsuarioViewModel.swift */; };
 		F37D446F2968C503002EA3C0 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D446E2968C503002EA3C0 /* Usuario.swift */; };
@@ -29,11 +36,20 @@
 		F3BB3F99295F4A87003B0091 /* ProductoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB3F97295F4A87003B0091 /* ProductoTableViewCell.swift */; };
 		F3BB3F9A295F4A87003B0091 /* ProductoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BB3F98295F4A87003B0091 /* ProductoTableViewCell.xib */; };
 		F3BB3F9C295F821E003B0091 /* product.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F3BB3F9B295F821E003B0091 /* product.jpeg */; };
+		F3C3D2622978718B00AC8460 /* ProductoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3D2612978718B00AC8460 /* ProductoCollectionViewController.swift */; };
+		F3C3D265297871CA00AC8460 /* ProductoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3D263297871CA00AC8460 /* ProductoCollectionViewCell.swift */; };
+		F3C3D266297871CA00AC8460 /* ProductoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C3D264297871CA00AC8460 /* ProductoCollectionViewCell.xib */; };
+		F3C3D26C2978BE1300AC8460 /* BusquedaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3D26B2978BE1300AC8460 /* BusquedaViewController.swift */; };
 		F3C5471E2967647500CAEB45 /* DepartamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5471C2967647500CAEB45 /* DepartamentoTableViewCell.swift */; };
 		F3C5471F2967647500CAEB45 /* DepartamentoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C5471D2967647500CAEB45 /* DepartamentoTableViewCell.xib */; };
 		F3C5472129676AC500CAEB45 /* DepartamentoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5472029676AC500CAEB45 /* DepartamentoViewModel.swift */; };
 		F3C5472329676E4F00CAEB45 /* GetAllDepaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5472229676E4F00CAEB45 /* GetAllDepaTableViewController.swift */; };
+		F3CF77B52975FFDB00605F0F /* DepartamentoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF77B42975FFDB00605F0F /* DepartamentoCollectionViewController.swift */; };
+		F3D3980F2979F74E005A8806 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F3D3980E2979F74E005A8806 /* FirebaseCrashlytics */; };
 		F3DFA45A2971DF70006C953E /* ProveedorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DFA4592971DF70006C953E /* ProveedorViewModel.swift */; };
+		F3DFA47D29722FB5006C953E /* AreaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DFA47C29722FB5006C953E /* AreaCollectionViewController.swift */; };
+		F3DFA480297230D6006C953E /* AreaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DFA47E297230D6006C953E /* AreaCollectionViewCell.swift */; };
+		F3DFA481297230D6006C953E /* AreaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3DFA47F297230D6006C953E /* AreaCollectionViewCell.xib */; };
 		F3E6EC31295BC2DB00C0CD18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC30295BC2DB00C0CD18 /* AppDelegate.swift */; };
 		F3E6EC33295BC2DB00C0CD18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC32295BC2DB00C0CD18 /* SceneDelegate.swift */; };
 		F3E6EC35295BC2DB00C0CD18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC34295BC2DB00C0CD18 /* ViewController.swift */; };
@@ -43,6 +59,23 @@
 		F3E6EC40295BC2DC00C0CD18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E6EC3E295BC2DC00C0CD18 /* LaunchScreen.storyboard */; };
 		F3E6EC4C295BC38F00C0CD18 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6EC4B295BC38F00C0CD18 /* DB.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F379316D297726890027D7F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3E6EC25295BC2DB00C0CD18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3E6EC2C295BC2DB00C0CD18;
+			remoteInfo = MRangelEcommerce;
+		};
+		F379317A297726C30027D7F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3E6EC25295BC2DB00C0CD18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3E6EC2C295BC2DB00C0CD18;
+			remoteInfo = MRangelEcommerce;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D7E34668F62AA08254847B7 /* Pods-MRangelEcommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRangelEcommerce.debug.xcconfig"; path = "Target Support Files/Pods-MRangelEcommerce/Pods-MRangelEcommerce.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +93,17 @@
 		F360A85B295CD22F00AC3CAA /* Proveedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proveedor.swift; sourceTree = "<group>"; };
 		F360A85D295CD23C00AC3CAA /* Departamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departamento.swift; sourceTree = "<group>"; };
 		F360A85F295CD37300AC3CAA /* ProductoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoViewModel.swift; sourceTree = "<group>"; };
+		F368F39C2975B17B0072FE94 /* AreaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewModel.swift; sourceTree = "<group>"; };
+		F368F3A02975B6E00072FE94 /* Ropa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ropa.jpeg; sourceTree = "<group>"; };
+		F368F3A32975C8C50072FE94 /* Calzado.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Calzado.jpeg; sourceTree = "<group>"; };
+		F3793161297705E30027D7F2 /* Linea Blanca.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Linea Blanca.jpeg"; sourceTree = "<group>"; };
+		F3793167297726890027D7F2 /* MRangelEcommerceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MRangelEcommerceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3793169297726890027D7F2 /* MRangelEcommerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRangelEcommerceUITests.swift; sourceTree = "<group>"; };
+		F379316B297726890027D7F2 /* MRangelEcommerceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRangelEcommerceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3793176297726C30027D7F2 /* MRangelEcommerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MRangelEcommerceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3793178297726C30027D7F2 /* MRangelEcommerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRangelEcommerceTests.swift; sourceTree = "<group>"; };
+		F379317F297728EC0027D7F2 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3793181297729090027D7F2 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37D446A2968A51D002EA3C0 /* DepaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepaViewController.swift; sourceTree = "<group>"; };
 		F37D446C2968C392002EA3C0 /* UsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioViewModel.swift; sourceTree = "<group>"; };
 		F37D446E2968C503002EA3C0 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
@@ -68,11 +112,19 @@
 		F3BB3F97295F4A87003B0091 /* ProductoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoTableViewCell.swift; sourceTree = "<group>"; };
 		F3BB3F98295F4A87003B0091 /* ProductoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductoTableViewCell.xib; sourceTree = "<group>"; };
 		F3BB3F9B295F821E003B0091 /* product.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product.jpeg; sourceTree = "<group>"; };
+		F3C3D2612978718B00AC8460 /* ProductoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoCollectionViewController.swift; sourceTree = "<group>"; };
+		F3C3D263297871CA00AC8460 /* ProductoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoCollectionViewCell.swift; sourceTree = "<group>"; };
+		F3C3D264297871CA00AC8460 /* ProductoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductoCollectionViewCell.xib; sourceTree = "<group>"; };
+		F3C3D26B2978BE1300AC8460 /* BusquedaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusquedaViewController.swift; sourceTree = "<group>"; };
 		F3C5471C2967647500CAEB45 /* DepartamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentoTableViewCell.swift; sourceTree = "<group>"; };
 		F3C5471D2967647500CAEB45 /* DepartamentoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepartamentoTableViewCell.xib; sourceTree = "<group>"; };
 		F3C5472029676AC500CAEB45 /* DepartamentoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentoViewModel.swift; sourceTree = "<group>"; };
 		F3C5472229676E4F00CAEB45 /* GetAllDepaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDepaTableViewController.swift; sourceTree = "<group>"; };
+		F3CF77B42975FFDB00605F0F /* DepartamentoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentoCollectionViewController.swift; sourceTree = "<group>"; };
 		F3DFA4592971DF70006C953E /* ProveedorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedorViewModel.swift; sourceTree = "<group>"; };
+		F3DFA47C29722FB5006C953E /* AreaCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCollectionViewController.swift; sourceTree = "<group>"; };
+		F3DFA47E297230D6006C953E /* AreaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCollectionViewCell.swift; sourceTree = "<group>"; };
+		F3DFA47F297230D6006C953E /* AreaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaCollectionViewCell.xib; sourceTree = "<group>"; };
 		F3E6EC2D295BC2DB00C0CD18 /* MRangelEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRangelEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E6EC30295BC2DB00C0CD18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E6EC32295BC2DB00C0CD18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,10 +138,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F3793164297726890027D7F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3793173297726C30027D7F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3E6EC2A295BC2DB00C0CD18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D3980F2979F74E005A8806 /* FirebaseCrashlytics in Frameworks */,
 				15C325789D47B616F3B195E7 /* Pods_MRangelEcommerce.framework in Frameworks */,
 				F331092B2970DD79008C278E /* FirebaseAuth in Frameworks */,
 			);
@@ -110,6 +177,8 @@
 		E56FFA960791D52F1F961942 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3793181297729090027D7F2 /* FirebaseFirestore.framework */,
+				F379317F297728EC0027D7F2 /* FirebaseAuth.framework */,
 				D3E9D4BAEF259F603912A9CB /* Pods_MRangelEcommerce.framework */,
 			);
 			name = Frameworks;
@@ -124,6 +193,23 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		F3793168297726890027D7F2 /* MRangelEcommerceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3793169297726890027D7F2 /* MRangelEcommerceUITests.swift */,
+				F379316B297726890027D7F2 /* MRangelEcommerceUITestsLaunchTests.swift */,
+			);
+			path = MRangelEcommerceUITests;
+			sourceTree = "<group>";
+		};
+		F3793177297726C30027D7F2 /* MRangelEcommerceTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3793178297726C30027D7F2 /* MRangelEcommerceTests.swift */,
+			);
+			path = MRangelEcommerceTests;
+			sourceTree = "<group>";
+		};
 		F37D44702968DB10002EA3C0 /* Usuario */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,11 +221,28 @@
 			path = Usuario;
 			sourceTree = "<group>";
 		};
+		F3DFA47B29722EDB006C953E /* Ventas */ = {
+			isa = PBXGroup;
+			children = (
+				F3DFA47C29722FB5006C953E /* AreaCollectionViewController.swift */,
+				F3DFA47E297230D6006C953E /* AreaCollectionViewCell.swift */,
+				F3DFA47F297230D6006C953E /* AreaCollectionViewCell.xib */,
+				F3CF77B42975FFDB00605F0F /* DepartamentoCollectionViewController.swift */,
+				F3C3D2612978718B00AC8460 /* ProductoCollectionViewController.swift */,
+				F3C3D263297871CA00AC8460 /* ProductoCollectionViewCell.swift */,
+				F3C3D264297871CA00AC8460 /* ProductoCollectionViewCell.xib */,
+				F3C3D26B2978BE1300AC8460 /* BusquedaViewController.swift */,
+			);
+			path = Ventas;
+			sourceTree = "<group>";
+		};
 		F3E6EC24295BC2DB00C0CD18 = {
 			isa = PBXGroup;
 			children = (
 				F33109272970D691008C278E /* GoogleService-Info.plist */,
 				F3E6EC2F295BC2DB00C0CD18 /* MRangelEcommerce */,
+				F3793168297726890027D7F2 /* MRangelEcommerceUITests */,
+				F3793177297726C30027D7F2 /* MRangelEcommerceTests */,
 				F3E6EC2E295BC2DB00C0CD18 /* Products */,
 				22A330085F9EE8EEE30D0434 /* Pods */,
 				E56FFA960791D52F1F961942 /* Frameworks */,
@@ -150,6 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				F3E6EC2D295BC2DB00C0CD18 /* MRangelEcommerce.app */,
+				F3793167297726890027D7F2 /* MRangelEcommerceUITests.xctest */,
+				F3793176297726C30027D7F2 /* MRangelEcommerceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +274,9 @@
 				F3E6EC41295BC2DC00C0CD18 /* Info.plist */,
 				F3E6EC39295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodeld */,
 				F3BB3F9B295F821E003B0091 /* product.jpeg */,
+				F3793161297705E30027D7F2 /* Linea Blanca.jpeg */,
+				F368F3A02975B6E00072FE94 /* Ropa.jpeg */,
+				F368F3A32975C8C50072FE94 /* Calzado.jpeg */,
 			);
 			path = MRangelEcommerce;
 			sourceTree = "<group>";
@@ -194,6 +302,7 @@
 				F3C5472029676AC500CAEB45 /* DepartamentoViewModel.swift */,
 				F37D446C2968C392002EA3C0 /* UsuarioViewModel.swift */,
 				F3DFA4592971DF70006C953E /* ProveedorViewModel.swift */,
+				F368F39C2975B17B0072FE94 /* AreaViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -209,6 +318,7 @@
 		F3E6EC4A295BC32A00C0CD18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F3DFA47B29722EDB006C953E /* Ventas */,
 				F331092C2970E441008C278E /* Login */,
 				F37D44702968DB10002EA3C0 /* Usuario */,
 				F3BB3F95295F49A1003B0091 /* GetAllTableViewController.swift */,
@@ -225,6 +335,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F3793166297726890027D7F2 /* MRangelEcommerceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F379316F297726890027D7F2 /* Build configuration list for PBXNativeTarget "MRangelEcommerceUITests" */;
+			buildPhases = (
+				F3793163297726890027D7F2 /* Sources */,
+				F3793164297726890027D7F2 /* Frameworks */,
+				F3793165297726890027D7F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F379316E297726890027D7F2 /* PBXTargetDependency */,
+			);
+			name = MRangelEcommerceUITests;
+			productName = MRangelEcommerceUITests;
+			productReference = F3793167297726890027D7F2 /* MRangelEcommerceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F3793175297726C30027D7F2 /* MRangelEcommerceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F379317C297726C30027D7F2 /* Build configuration list for PBXNativeTarget "MRangelEcommerceTests" */;
+			buildPhases = (
+				F3793172297726C30027D7F2 /* Sources */,
+				F3793173297726C30027D7F2 /* Frameworks */,
+				F3793174297726C30027D7F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F379317B297726C30027D7F2 /* PBXTargetDependency */,
+			);
+			name = MRangelEcommerceTests;
+			productName = MRangelEcommerceTests;
+			productReference = F3793176297726C30027D7F2 /* MRangelEcommerceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F3E6EC2C295BC2DB00C0CD18 /* MRangelEcommerce */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3E6EC44295BC2DC00C0CD18 /* Build configuration list for PBXNativeTarget "MRangelEcommerce" */;
@@ -242,6 +388,7 @@
 			name = MRangelEcommerce;
 			packageProductDependencies = (
 				F331092A2970DD79008C278E /* FirebaseAuth */,
+				F3D3980E2979F74E005A8806 /* FirebaseCrashlytics */,
 			);
 			productName = MRangelEcommerce;
 			productReference = F3E6EC2D295BC2DB00C0CD18 /* MRangelEcommerce.app */;
@@ -257,6 +404,14 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					F3793166297726890027D7F2 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F3E6EC2C295BC2DB00C0CD18;
+					};
+					F3793175297726C30027D7F2 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F3E6EC2C295BC2DB00C0CD18;
+					};
 					F3E6EC2C295BC2DB00C0CD18 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -279,22 +434,43 @@
 			projectRoot = "";
 			targets = (
 				F3E6EC2C295BC2DB00C0CD18 /* MRangelEcommerce */,
+				F3793166297726890027D7F2 /* MRangelEcommerceUITests */,
+				F3793175297726C30027D7F2 /* MRangelEcommerceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F3793165297726890027D7F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3793174297726C30027D7F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3E6EC2B295BC2DB00C0CD18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F3E6EC40295BC2DC00C0CD18 /* LaunchScreen.storyboard in Resources */,
+				F368F3A12975B6E00072FE94 /* Ropa.jpeg in Resources */,
 				F33109282970D691008C278E /* GoogleService-Info.plist in Resources */,
+				F3793162297705E30027D7F2 /* Linea Blanca.jpeg in Resources */,
 				F3600B32296C88D7006AE0B0 /* UsuarioTableViewCell.xib in Resources */,
 				F3BB3F9C295F821E003B0091 /* product.jpeg in Resources */,
 				F3BB3F9A295F4A87003B0091 /* ProductoTableViewCell.xib in Resources */,
 				F3C5471F2967647500CAEB45 /* DepartamentoTableViewCell.xib in Resources */,
 				F3E6EC3D295BC2DC00C0CD18 /* Assets.xcassets in Resources */,
+				F3DFA481297230D6006C953E /* AreaCollectionViewCell.xib in Resources */,
+				F368F3A42975C8C50072FE94 /* Calzado.jpeg in Resources */,
+				F3C3D266297871CA00AC8460 /* ProductoCollectionViewCell.xib in Resources */,
 				F3E6EC38295BC2DB00C0CD18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +520,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F3793163297726890027D7F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F379316C297726890027D7F2 /* MRangelEcommerceUITestsLaunchTests.swift in Sources */,
+				F379316A297726890027D7F2 /* MRangelEcommerceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3793172297726C30027D7F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3793179297726C30027D7F2 /* MRangelEcommerceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3E6EC29295BC2DB00C0CD18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +546,7 @@
 				F3C5471E2967647500CAEB45 /* DepartamentoTableViewCell.swift in Sources */,
 				F3DFA45A2971DF70006C953E /* ProveedorViewModel.swift in Sources */,
 				F331092E2970E463008C278E /* LoginViewController.swift in Sources */,
+				F3DFA47D29722FB5006C953E /* AreaCollectionViewController.swift in Sources */,
 				F3E6EC31295BC2DB00C0CD18 /* AppDelegate.swift in Sources */,
 				F37D446B2968A51D002EA3C0 /* DepaViewController.swift in Sources */,
 				F3E6EC33295BC2DB00C0CD18 /* SceneDelegate.swift in Sources */,
@@ -360,23 +554,42 @@
 				F360A856295CD0F600AC3CAA /* Producto.swift in Sources */,
 				F360A858295CD10C00AC3CAA /* Result.swift in Sources */,
 				F37D446F2968C503002EA3C0 /* Usuario.swift in Sources */,
+				F3C3D265297871CA00AC8460 /* ProductoCollectionViewCell.swift in Sources */,
 				F3BB3F96295F49A1003B0091 /* GetAllTableViewController.swift in Sources */,
 				F3C5472329676E4F00CAEB45 /* GetAllDepaTableViewController.swift in Sources */,
+				F3C3D26C2978BE1300AC8460 /* BusquedaViewController.swift in Sources */,
 				F3E6EC4C295BC38F00C0CD18 /* DB.swift in Sources */,
+				F3CF77B52975FFDB00605F0F /* DepartamentoCollectionViewController.swift in Sources */,
 				F3600B2E296C86B2006AE0B0 /* GetAllUsuarioTableViewController.swift in Sources */,
 				F360A85A295CD21900AC3CAA /* Area.swift in Sources */,
 				F360A85C295CD22F00AC3CAA /* Proveedor.swift in Sources */,
+				F3C3D2622978718B00AC8460 /* ProductoCollectionViewController.swift in Sources */,
+				F368F39D2975B17B0072FE94 /* AreaViewModel.swift in Sources */,
 				F3BB3F99295F4A87003B0091 /* ProductoTableViewCell.swift in Sources */,
 				F360A860295CD37300AC3CAA /* ProductoViewModel.swift in Sources */,
 				F37D446D2968C392002EA3C0 /* UsuarioViewModel.swift in Sources */,
 				F33109322970EBBC008C278E /* SigninViewController.swift in Sources */,
 				F37D44722968DB3C002EA3C0 /* UsuarioViewController.swift in Sources */,
+				F3DFA480297230D6006C953E /* AreaCollectionViewCell.swift in Sources */,
 				F3E6EC3B295BC2DB00C0CD18 /* MRangelEcommerce.xcdatamodeld in Sources */,
 				F3C5472129676AC500CAEB45 /* DepartamentoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F379316E297726890027D7F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3E6EC2C295BC2DB00C0CD18 /* MRangelEcommerce */;
+			targetProxy = F379316D297726890027D7F2 /* PBXContainerItemProxy */;
+		};
+		F379317B297726C30027D7F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3E6EC2C295BC2DB00C0CD18 /* MRangelEcommerce */;
+			targetProxy = F379317A297726C30027D7F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F3E6EC36295BC2DB00C0CD18 /* Main.storyboard */ = {
@@ -398,6 +611,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F3793170297726890027D7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LB82Q2DXR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis01.MRangelEcommerceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MRangelEcommerce;
+			};
+			name = Debug;
+		};
+		F3793171297726890027D7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LB82Q2DXR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis01.MRangelEcommerceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MRangelEcommerce;
+			};
+			name = Release;
+		};
+		F379317D297726C30027D7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LB82Q2DXR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis01.MRangelEcommerceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MRangelEcommerce.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MRangelEcommerce";
+			};
+			name = Debug;
+		};
+		F379317E297726C30027D7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LB82Q2DXR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis01.MRangelEcommerceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MRangelEcommerce.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MRangelEcommerce";
+			};
+			name = Release;
+		};
 		F3E6EC42295BC2DC00C0CD18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -573,6 +856,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F379316F297726890027D7F2 /* Build configuration list for PBXNativeTarget "MRangelEcommerceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3793170297726890027D7F2 /* Debug */,
+				F3793171297726890027D7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F379317C297726C30027D7F2 /* Build configuration list for PBXNativeTarget "MRangelEcommerceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F379317D297726C30027D7F2 /* Debug */,
+				F379317E297726C30027D7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3E6EC28295BC2DB00C0CD18 /* Build configuration list for PBXProject "MRangelEcommerce" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -609,6 +910,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F33109292970DD79008C278E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		F3D3980E2979F74E005A8806 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33109292970DD79008C278E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 

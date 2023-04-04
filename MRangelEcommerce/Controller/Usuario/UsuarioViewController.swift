@@ -62,12 +62,12 @@ class UsuarioViewController : UIViewController, UIImagePickerControllerDelegate,
                 TelefonoField.text = usuario.Telefono
                 CelularField.text = usuario.Celular
                 CurpField.text = usuario.Curp
-                if ImagenView.image == UIImage(named: "") {
+                if usuario.Imagen == nil{
                     ImagenView.image = UIImage(named: "product")
+                }else{
+                    let imageData = Data(base64Encoded: usuario.Imagen, options: Data.Base64DecodingOptions.ignoreUnknownCharacters)
+                    ImagenView.image = UIImage(data: imageData!)
                 }
-                //else{
-                //Convertir imagen de BASE64 a DATA
-                //}
             }
         }
     }

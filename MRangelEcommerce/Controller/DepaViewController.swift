@@ -5,23 +5,66 @@
 //  Created by MacBookMBA5 on 06/01/23.
 //
 import UIKit
+import iOSDropDown
 //import Foundation
 
 class DepaViewController: UIViewController, UINavigationControllerDelegate {
     
-    @IBOutlet weak var NombreField: UITextField!
-    @IBOutlet weak var IdAreaField: UITextField!
+    @IBOutlet weak var NombreField: DropDown!
+    @IBOutlet weak var IdAreaField: DropDown!
     @IBOutlet weak var AccionBtn: UIButton!
     
     let departamentoViewModel = DepartamentoViewModel()
     var departamentoModel : Departamento? = nil
     var idDepartamento : Int? = nil
     
+    let areaViewModel = AreaViewModel()
+    var areaModel : Area? = nil
+    var idArea : Int? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let db = DB.init()
         validar()
+        
+        NombreField.optionArray = [String]()
+        NombreField.optionIds = [Int]()
+        IdAreaField.optionArray = [String]()
+        IdAreaField.optionIds = [Int]()
+        
+        LoadData()
+        NombreField.didSelect { selectedText, index, id in
+            self.LoadDataDepartamento(id)
+        }
+        
+        IdAreaField.didSelect { selectedText, index, id in
+            self.idArea = id
+        }
     }
+    
+    func LoadData(){
+        let result = areaViewModel.GetAll()
+            if result.Correct{
+                for area in result.Objects as! [Area]{
+                    NombreField.optionArray.append(area.Nombre)
+                    NombreField.optionIds?.append(area.IdArea)
+                }
+            }
+        }
+        func LoadDataDepartamento(_ IdArea : Int){
+            let result = departamentoViewModel.GetByIdDepartamento(idArea: IdArea)
+            if result.Correct{
+                IdAreaField.optionArray = [String]()
+                IdAreaField.optionIds = [Int]()
+                for departamento in result.Objects as! [Departamento]{
+                    IdAreaField.optionArray.append(departamento.Nombre)
+                    IdAreaField.optionIds?.append(departamento.IdDepartamento)
+                }
+            }
+        }
+    
+    
+    
     
     func validar(){
         if idDepartamento == nil{

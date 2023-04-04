@@ -15,6 +15,8 @@ class SigninViewController : UIViewController, UIImagePickerControllerDelegate,U
     
     @IBOutlet weak var PasswordField: UITextField!
     
+    @IBOutlet weak var ConfirmPassField: UITextField!
+    
     @IBOutlet weak var SigninBtn: UIButton!
     
 
@@ -27,7 +29,8 @@ class SigninViewController : UIViewController, UIImagePickerControllerDelegate,U
     @IBAction func SigninBtn(_ sender: UIButton) {
         
         if let email = EmailField.text, let password = PasswordField.text {
-            Auth.auth().createUser(withEmail: email, password: password){ (result, error) in
+                Auth.auth().createUser(withEmail: email, password: password){ (result, error) in
+                
                 if let result = result, error == nil {
                     let alert = UIAlertController(title: "Confirmación", message: "Usuario registrado correctamente", preferredStyle: .alert)
                     let Aceptar = UIAlertAction(title: "Aceptar", style: .default,handler:
@@ -46,5 +49,4 @@ class SigninViewController : UIViewController, UIImagePickerControllerDelegate,U
             }
         }
     }
-    
 }

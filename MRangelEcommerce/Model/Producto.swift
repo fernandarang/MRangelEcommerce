@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PDFKit
 
 struct Producto{
     var IdProducto : Int
@@ -40,4 +41,5 @@ struct Producto{
             self.Proveedor = MRangelEcommerce.Proveedor(IdProveedor: 0, Nombre: "", Telefono: "")
             self.Departamento = MRangelEcommerce.Departamento(IdDepartamento: 0, Nombre: "", Area: Area(IdArea: 0, Nombre: ""))
         }
+    
 }

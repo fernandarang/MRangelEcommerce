@@ -25,6 +25,25 @@ class GetAllTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+    @IBAction func Options(_ sender: UIButton) {
+        let actionSheet = UIAlertController(title: "What do you want to do?", message: nil, preferredStyle: .actionSheet)
+        let addAction = UIAlertAction(title: "Agregar Producto", style: .default) { (_) in
+                    self.performSegue(withIdentifier: "AgregarSegue", sender: self)
+        }
+        let pdfAction = UIAlertAction(title: "Lista de productos - PDF ", style: .default) { _ in
+                    self.performSegue(withIdentifier: "pdfSegue", sender: self)
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                
+                actionSheet.addAction(addAction)
+                actionSheet.addAction(pdfAction)
+                actionSheet.addAction(cancel)
+                
+        present(actionSheet, animated: true, completion: nil)
+    }
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         loadData()
     }

@@ -14,7 +14,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     @IBOutlet weak var NombreField: UITextField!
     @IBOutlet weak var StockField: UITextField!
    
-    @IBOutlet weak var IdDepartamentoField: UITextField!
+    @IBOutlet weak var IdDepartamentoField: DropDown!
     @IBOutlet weak var DescripcionField: UITextField!
     @IBOutlet weak var IdProductoField: UITextField!
     
@@ -29,6 +29,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     let imagePiker = UIImagePickerController()
     var idProducto : Int? = nil
     var idProveedor :Int? = nil
+    var idDepartamento : Int? = nil
+    let departamentoViewModel = DepartamentoViewModel()
+    var departamentoModel : Departamento? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +45,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         
         ProveedorDropDown.optionArray = [String] ()
         ProveedorDropDown.optionIds = [Int] ()
+        IdDepartamentoField.optionArray = [String] ()
+        IdDepartamentoField.optionIds = [Int] ()
         
         ProveedorDropDown.didSelect { selectedText, index, id in
            
@@ -49,7 +54,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                 }
         
         LoadData()
-        
+        IdDepartamentoField.didSelect { selectedText, index, id in
+            self.idDepartamento = id
+        }
+        LoadDataDepa()
     }
     
     func LoadData (){
@@ -58,6 +66,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             for proveedor in result.Objects as! [Proveedor]{
                 ProveedorDropDown.optionArray.append(proveedor.Nombre)
                 ProveedorDropDown.optionIds?.append(proveedor.IdProveedor)
+            }
+        }
+    }
+    func LoadDataDepa () {
+        let result = departamentoViewModel.GetAll()
+        if result.Correct{
+            for departamento in result.Objects as! [Departamento]{
+                IdDepartamentoField.optionArray.append(departamento.Nombre)
+                IdDepartamentoField.optionIds?.append(departamento.IdDepartamento)
             }
         }
     }
@@ -80,10 +97,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                 IdDepartamentoField.text = String(producto.Departamento.IdDepartamento)
                 DescripcionField.text = producto.Descripcion
                 
-                if imageView.image == UIImage(named: "") {
+                if producto.Imagen == nil{
                     imageView.image = UIImage(named: "product")
                 }else{
-                    //Convertir imagen de BASE64 a DATA
+                    let imageData = Data(base64Encoded: producto.Imagen, options: Data.Base64DecodingOptions.ignoreUnknownCharacters)
+                    imageView.image = UIImage(data: imageData!)
                 }
                 
             }else{
@@ -132,7 +150,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                 return
             }
             let image = imageView.image!
-            let imageString : String
+            var imageString : String
             if imageView.restorationIdentifier == "product"{
                 imageString = ""
             }else{
@@ -155,6 +173,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                     self.ProveedorDropDown.text = ""
                     self.IdDepartamentoField.text = ""
                     self.DescripcionField.text = ""
+                    self.imageView.image = UIImage(named: "product")
                 })
                 //alert.addAction(ok)
                 alert.addAction(Aceptar)
@@ -199,7 +218,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             // return
             
             let image = imageView.image!
-            let imageString : String
+            var imageString : String
             if imageView.restorationIdentifier == "product"{
                 imageString = ""
             }else{
@@ -224,6 +243,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                     self.IdDepartamentoField.text = ""
                     self.DescripcionField.text = ""
                     self.IdProductoField.text = ""
+                    self.imageView.image = UIImage(named: "product")
                 })
                 //alert.addAction(ok)
                 alert.addAction(Aceptar)

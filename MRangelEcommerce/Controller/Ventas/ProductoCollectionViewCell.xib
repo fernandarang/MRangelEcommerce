@@ -11,10 +11,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductoCell" id="gTV-IL-0wX" userLabel="ProductoCell" customClass="ProductoCollectionViewCell" customModule="MRangelEcommerce" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="192" height="270"/>
+            <rect key="frame" x="0.0" y="0.0" width="195" height="270"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="192" height="270"/>
+                <rect key="frame" x="0.0" y="0.0" width="195" height="270"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-A8-FBY">
@@ -68,14 +68,14 @@
                 <constraint firstItem="cEh-A8-FBY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kKy-2F-jfh"/>
                 <constraint firstItem="cEh-A8-FBY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sE8-aR-Kid"/>
             </constraints>
-            <size key="customSize" width="170" height="205"/>
+            <size key="customSize" width="173" height="205"/>
             <connections>
                 <outlet property="AgregarBtn" destination="dbb-jX-n0N" id="OKu-Br-hMA"/>
                 <outlet property="Descripcionlbl" destination="Yep-Fd-8zP" id="j4j-Cr-lMG"/>
                 <outlet property="ImageProduct" destination="IY1-5R-gLm" id="mJ8-P6-VaK"/>
                 <outlet property="Nombrelbl" destination="wyH-tE-6Od" id="CZp-oY-LZs"/>
             </connections>
-            <point key="canvasLocation" x="142" y="4"/>
+            <point key="canvasLocation" x="46.92307692307692" y="19.90521327014218"/>
         </collectionViewCell>
     </objects>
     <resources>

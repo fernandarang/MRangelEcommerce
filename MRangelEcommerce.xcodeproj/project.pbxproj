@@ -39,7 +39,6 @@
 		F3BB3F99295F4A87003B0091 /* ProductoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB3F97295F4A87003B0091 /* ProductoTableViewCell.swift */; };
 		F3BB3F9A295F4A87003B0091 /* ProductoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BB3F98295F4A87003B0091 /* ProductoTableViewCell.xib */; };
 		F3BB3F9C295F821E003B0091 /* product.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F3BB3F9B295F821E003B0091 /* product.jpeg */; };
-		F3BE0A5529DB6FDA003E1966 /* PDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE0A5429DB6FDA003E1966 /* PDFViewModel.swift */; };
 		F3BE0A5729DB74A4003E1966 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE0A5629DB74A4003E1966 /* PDFViewController.swift */; };
 		F3BF1B13298068E500F76C78 /* MetodoPago.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF1B12298068E500F76C78 /* MetodoPago.swift */; };
 		F3BF1B152980693100F76C78 /* Venta.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF1B142980693100F76C78 /* Venta.swift */; };
@@ -129,7 +128,6 @@
 		F3BB3F97295F4A87003B0091 /* ProductoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoTableViewCell.swift; sourceTree = "<group>"; };
 		F3BB3F98295F4A87003B0091 /* ProductoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductoTableViewCell.xib; sourceTree = "<group>"; };
 		F3BB3F9B295F821E003B0091 /* product.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product.jpeg; sourceTree = "<group>"; };
-		F3BE0A5429DB6FDA003E1966 /* PDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewModel.swift; sourceTree = "<group>"; };
 		F3BE0A5629DB74A4003E1966 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		F3BF1B12298068E500F76C78 /* MetodoPago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetodoPago.swift; sourceTree = "<group>"; };
 		F3BF1B142980693100F76C78 /* Venta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venta.swift; sourceTree = "<group>"; };
@@ -342,7 +340,6 @@
 				F3DFA4592971DF70006C953E /* ProveedorViewModel.swift */,
 				F368F39C2975B17B0072FE94 /* AreaViewModel.swift */,
 				F3BF1B18298070F300F76C78 /* VentaProductoViewModel.swift */,
-				F3BE0A5429DB6FDA003E1966 /* PDFViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -642,7 +639,6 @@
 				F3A3B7F62981B43100E0300E /* DetalleTableViewCell.swift in Sources */,
 				F360A860295CD37300AC3CAA /* ProductoViewModel.swift in Sources */,
 				F37D446D2968C392002EA3C0 /* UsuarioViewModel.swift in Sources */,
-				F3BE0A5529DB6FDA003E1966 /* PDFViewModel.swift in Sources */,
 				F33109322970EBBC008C278E /* SigninViewController.swift in Sources */,
 				F37D44722968DB3C002EA3C0 /* UsuarioViewController.swift in Sources */,
 				F3DFA480297230D6006C953E /* AreaCollectionViewCell.swift in Sources */,

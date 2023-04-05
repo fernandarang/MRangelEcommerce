@@ -14,15 +14,12 @@ class PDFViewController: UIViewController {
     var pdfData : Data?
     var productoViewModel = ProductoViewModel()
     var productos = [Producto]()
-    var departamentos = [Departamento]()
-    var proveedores = [Proveedor]()
-    var areas = [Area]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
     
     @IBAction func generatePDF(_ sender: Any) {
         pdfLoadData()
@@ -98,12 +95,12 @@ class PDFViewController: UIViewController {
                 cursor+=6
             
             if let descripcion = producto.Descripcion {
-                    cursor = context.addMultiLineText(fontSize: 11, weight: .regular, text: "Descripcion: \(descripcion)", indent: leftMargin, cursor: cursor, pdfSize: pdfSize)
+                    cursor = context.addMultiLineText(fontSize: 11, weight: .thin, text: "Descripcion: \(descripcion)", indent: leftMargin, cursor: cursor, pdfSize: pdfSize)
                     cursor+=2
                 }
                 
             if let Precio = producto.PrecioUnitario{
-                cursor = context.addSingleLineText(fontSize: 12, weight: .thin, text: "Precio Unitario: \(Precio)", indent: leftMargin, cursor: cursor, pdfSize: pdfSize, annotation: nil, annotationColor: nil)
+                cursor = context.addSingleLineText(fontSize: 12, weight: .thin, text: "Precio Unitario: $\(Precio)", indent: leftMargin, cursor: cursor, pdfSize: pdfSize, annotation: nil, annotationColor: nil)
                 cursor+=2
             }
             if let Stock = producto.Stock{
@@ -118,11 +115,6 @@ class PDFViewController: UIViewController {
                 cursor = context.addSingleLineText(fontSize: 12, weight: .thin, text: "Departamento: \(Departamento)", indent: leftMargin, cursor: cursor, pdfSize: pdfSize, annotation: nil, annotationColor: nil)
                 cursor+=2
             }
-//            if let Area = producto.Departamento?.Area.Nombre{
-//                cursor = context.addSingleLineText(fontSize: 12, weight: .thin, text: "Area: \(Area)", indent: leftMargin, cursor: cursor, pdfSize: pdfSize, annotation: nil, annotationColor: nil)
-//                cursor+=2
-//            }
-                
                 cursor+=8
             }
             

@@ -10,9 +10,6 @@ import PDFKit
 
 class PDF2ViewController: UIViewController {
     
-    @IBOutlet weak var pdfView: PDFView!
-    @IBOutlet weak var shareButton: UIBarButtonItem!
-    
     var documentData : Data?
     
     private let pdfViews : PDFView = {
@@ -20,6 +17,7 @@ class PDF2ViewController: UIViewController {
             return pdfVIew
         }()
     
+    let shareButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareAction))
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +29,7 @@ class PDF2ViewController: UIViewController {
             pdfViews.pageBreakMargins = UIEdgeInsets.init(top: 20, left: 8, bottom: 32, right: 8)
             pdfViews.document = PDFDocument(data: data)
             pdfViews.frame = view.bounds
+            pdfViews.layer.cornerRadius = 16
         }
         
         NSLayoutConstraint.activate([
@@ -40,13 +39,10 @@ class PDF2ViewController: UIViewController {
             pdfViews.heightAnchor.constraint(equalToConstant: 610)
         ])
         
-        let shareButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareAction))
         navigationItem.rightBarButtonItem = shareButton
-        //navigationItem.backBarButtonItem = shareButton
         //self.toolbarItems?.append(shareButton)
-
     }
-    
+
     @objc func shareAction(){
         if let dt = documentData {
                     let vc = UIActivityViewController(
@@ -59,19 +55,6 @@ class PDF2ViewController: UIViewController {
                     self.present(vc, animated: true, completion: nil)
                 }
     }
-    
-//    @IBAction func shareButton(_ sender: Any) {
-//        if let dt = documentData {
-//                    let vc = UIActivityViewController(
-//                      activityItems: [dt],
-//                      applicationActivities: []
-//                    )
-//                    if UIDevice.current.userInterfaceIdiom == .pad {
-//                        vc.popoverPresentationController?.barButtonItem = shareButton
-//                    }
-//                    self.present(vc, animated: true, completion: nil)
-//                }
-//    }
     
     /*
     // MARK: - Navigation

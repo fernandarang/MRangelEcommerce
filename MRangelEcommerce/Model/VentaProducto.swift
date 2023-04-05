@@ -13,7 +13,6 @@ struct VentaProducto{
     // Propiedad de navegacion
     var Producto : Producto
     
-    
     init(IdVentaProducto: Int, Cantidad: Int, Producto: Producto) {
         self.IdVentaProducto = IdVentaProducto
         self.Cantidad = Cantidad

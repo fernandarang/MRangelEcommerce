@@ -7,12 +7,15 @@
 
 import UIKit
 import SwipeCellKit
+import PDFKit
 
-class GetAllTableViewController: UITableViewController {
+class GetAllTableViewController: UITableViewController{
 
     let productoViewModel = ProductoViewModel()
         var productos = [Producto]()
     var idProducto : Int? = nil
+    var pdfData : Data?
+    var pdfViewController = PDFViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,7 @@ class GetAllTableViewController: UITableViewController {
                     self.performSegue(withIdentifier: "AgregarSegue", sender: self)
         }
         let pdfAction = UIAlertAction(title: "Lista de productos - PDF ", style: .default) { _ in
-                    self.performSegue(withIdentifier: "pdfSegue", sender: self)
+            self.pdfLoadData()
         }
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
                 
@@ -42,7 +45,15 @@ class GetAllTableViewController: UITableViewController {
         present(actionSheet, animated: true, completion: nil)
     }
     
-    
+    func pdfLoadData(){
+        let result = productoViewModel.GetAllINER()
+        if result.Correct{
+            productos = result.Objects! as! [Producto]
+            let pdfData = pdfViewController.generatePdfData(productos: productos)
+            self.pdfData = pdfData
+            self.performSegue(withIdentifier: "PDFSegue", sender: self)
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         loadData()
@@ -80,10 +91,10 @@ class GetAllTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductoCell", for: indexPath) as! ProductoTableViewCell
         cell.Nombrelbl.text = productos[indexPath.row].Nombre
-        cell.PrecioUnitariolbl.text = String(productos[indexPath.row].PrecioUnitario)
-        cell.Stocklbl.text = String(productos[indexPath.row].Stock)
-        cell.IdProveedor.text = String(productos[indexPath.row].Proveedor.IdProveedor)
-        cell.IdDepartamentolbl.text = String(productos[indexPath.row].Departamento.IdDepartamento)
+        cell.PrecioUnitariolbl.text = String(productos[indexPath.row].PrecioUnitario!)
+        cell.Stocklbl.text = String(productos[indexPath.row].Stock!)
+        cell.IdProveedor.text = String(productos[indexPath.row].Proveedor!.IdProveedor)
+        cell.IdDepartamentolbl.text = String(productos[indexPath.row].Departamento!.IdDepartamento)
         cell.Descripcionlbl.text = productos[indexPath.row].Descripcion
         
         if productos[indexPath.row].Imagen == ""{
@@ -186,6 +197,10 @@ extension GetAllTableViewController : SwipeTableViewCellDelegate{
                 productoController.idProducto = self.idProducto
                 print("recupero id")
             }
+        if let vc = segue.destination as? PDF2ViewController {
+            vc.documentData = pdfData
+        }
+           
         }
     
 }

@@ -83,7 +83,7 @@ extension CarritoViewController : UITableViewDelegate, UITableViewDataSource, Sw
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "carritoCell", for: indexPath) as! CarritoTableViewCell
         cell.Nombrelbl.text = ventaProductos[indexPath.row].Producto.Nombre
-        cell.Preciolbl.text = "$ \(String(ventaProductos[indexPath.row].Producto.PrecioUnitario))"
+        cell.Preciolbl.text = "$ \(String(ventaProductos[indexPath.row].Producto.PrecioUnitario!))"
         cell.Cantidadlbl.text = "Cantidad: \(String(ventaProductos[indexPath.row].Cantidad))"
         
         if ventaProductos[indexPath.row].Producto.Imagen == ""{

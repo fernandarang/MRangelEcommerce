@@ -46,7 +46,7 @@ class DepaViewController: UIViewController, UINavigationControllerDelegate {
         let result = areaViewModel.GetAll()
             if result.Correct{
                 for area in result.Objects as! [Area]{
-                    NombreField.optionArray.append(area.Nombre)
+                    NombreField.optionArray.append(area.Nombre!)
                     NombreField.optionIds?.append(area.IdArea)
                 }
             }

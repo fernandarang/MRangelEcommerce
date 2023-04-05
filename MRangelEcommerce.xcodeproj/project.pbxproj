@@ -12,6 +12,7 @@
 		F331092B2970DD79008C278E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F331092A2970DD79008C278E /* FirebaseAuth */; };
 		F331092E2970E463008C278E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331092D2970E463008C278E /* LoginViewController.swift */; };
 		F33109322970EBBC008C278E /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33109312970EBBC008C278E /* SigninViewController.swift */; };
+		F34CA06029DCA1E700F6EE7C /* PDF2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34CA05F29DCA1E700F6EE7C /* PDF2ViewController.swift */; };
 		F3600B2E296C86B2006AE0B0 /* GetAllUsuarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3600B2D296C86B2006AE0B0 /* GetAllUsuarioTableViewController.swift */; };
 		F3600B31296C88D7006AE0B0 /* UsuarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3600B2F296C88D7006AE0B0 /* UsuarioTableViewCell.swift */; };
 		F3600B32296C88D7006AE0B0 /* UsuarioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3600B30296C88D7006AE0B0 /* UsuarioTableViewCell.xib */; };
@@ -97,6 +98,7 @@
 		F33109272970D691008C278E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F331092D2970E463008C278E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F33109312970EBBC008C278E /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		F34CA05F29DCA1E700F6EE7C /* PDF2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF2ViewController.swift; sourceTree = "<group>"; };
 		F3600B2D296C86B2006AE0B0 /* GetAllUsuarioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllUsuarioTableViewController.swift; sourceTree = "<group>"; };
 		F3600B2F296C88D7006AE0B0 /* UsuarioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioTableViewCell.swift; sourceTree = "<group>"; };
 		F3600B30296C88D7006AE0B0 /* UsuarioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsuarioTableViewCell.xib; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 				F3C5472229676E4F00CAEB45 /* GetAllDepaTableViewController.swift */,
 				F37D446A2968A51D002EA3C0 /* DepaViewController.swift */,
 				F3BE0A5629DB74A4003E1966 /* PDFViewController.swift */,
+				F34CA05F29DCA1E700F6EE7C /* PDF2ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -616,6 +619,7 @@
 				F360A858295CD10C00AC3CAA /* Result.swift in Sources */,
 				F37D446F2968C503002EA3C0 /* Usuario.swift in Sources */,
 				F3C3D265297871CA00AC8460 /* ProductoCollectionViewCell.swift in Sources */,
+				F34CA06029DCA1E700F6EE7C /* PDF2ViewController.swift in Sources */,
 				F3BB3F96295F49A1003B0091 /* GetAllTableViewController.swift in Sources */,
 				F3C5472329676E4F00CAEB45 /* GetAllDepaTableViewController.swift in Sources */,
 				F3BF1B152980693100F76C78 /* Venta.swift in Sources */,

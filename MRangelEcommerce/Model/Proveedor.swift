@@ -9,7 +9,7 @@ import Foundation
 
 struct Proveedor{
     var IdProveedor : Int
-    var Nombre : String
+    var Nombre : String?
     var Telefono : String
     
     init(IdProveedor: Int, Nombre: String, Telefono: String) {

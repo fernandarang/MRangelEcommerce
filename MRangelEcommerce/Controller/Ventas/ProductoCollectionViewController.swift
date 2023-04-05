@@ -110,7 +110,7 @@ class ProductoCollectionViewController: UICollectionViewController{
     @objc func comprar (sender : UIButton){
         let producto = self.productos[sender.tag].IdProducto
         print("Producto con posición \(sender.tag) y id \(producto)")
-        addCarrito(idProducto: producto)
+        addCarrito(idProducto: producto!)
     }
     
     func addCarrito (idProducto : Int) -> Result{
@@ -122,7 +122,7 @@ class ProductoCollectionViewController: UICollectionViewController{
         do{
             if try sqlite3_prepare_v2(context.db, query, -1, &statement, nil) == SQLITE_OK {
                 sqlite3_bind_int(statement, 1, Int32(ventaProducto.Cantidad))
-                sqlite3_bind_int(statement, 2, Int32(ventaProducto.Producto.IdProducto))
+                sqlite3_bind_int(statement, 2, Int32(ventaProducto.Producto.IdProducto!))
                 
                 if sqlite3_step(statement) == SQLITE_DONE {
                     result.Correct = true

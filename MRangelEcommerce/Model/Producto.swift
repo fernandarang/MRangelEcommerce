@@ -9,16 +9,17 @@ import Foundation
 import PDFKit
 
 struct Producto{
-    var IdProducto : Int
-    var Nombre : String
-    var PrecioUnitario : Double
-    var Stock : Int
-    var Descripcion : String
+    var IdProducto : Int?
+    var Nombre : String?
+    var PrecioUnitario : Double?
+    var Stock : Int?
+    var Descripcion : String?
     var Imagen : String
     
     //Propiedades de Navegacion
-    var Proveedor : Proveedor
-    var Departamento : Departamento
+    var Proveedor : Proveedor?
+    var Departamento : Departamento?
+    
     
     init(IdProducto: Int, Nombre: String, PrecioUnitario: Double, Stock: Int, Descripcion: String,Imagen : String, Proveedor : Proveedor,Departamento: Departamento) {
             self.IdProducto = IdProducto
@@ -39,7 +40,7 @@ struct Producto{
             self.Descripcion = ""
             self.Imagen = ""
             self.Proveedor = MRangelEcommerce.Proveedor(IdProveedor: 0, Nombre: "", Telefono: "")
-            self.Departamento = MRangelEcommerce.Departamento(IdDepartamento: 0, Nombre: "", Area: Area(IdArea: 0, Nombre: ""))
+            self.Departamento = MRangelEcommerce.Departamento(IdDepartamento: 0, Nombre: "", Area: MRangelEcommerce.Area(IdArea: 0, Nombre: ""))
         }
     
 }

@@ -9,7 +9,7 @@ import Foundation
 
 struct Area{
     var IdArea : Int
-    var Nombre : String
+    var Nombre : String?
     
     init(IdArea: Int, Nombre: String) {
         self.IdArea = IdArea

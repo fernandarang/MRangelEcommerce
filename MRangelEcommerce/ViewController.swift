@@ -64,7 +64,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         let result = proveedorViewModel.GetAll()
         if result.Correct{
             for proveedor in result.Objects as! [Proveedor]{
-                ProveedorDropDown.optionArray.append(proveedor.Nombre)
+                ProveedorDropDown.optionArray.append(proveedor.Nombre!)
                 ProveedorDropDown.optionIds?.append(proveedor.IdProveedor)
             }
         }
@@ -91,10 +91,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             if result.Correct{
                 let producto = result.Object as! Producto //Mostar el formulario precargado
                 NombreField.text = producto.Nombre
-                PrecioUnitarioField.text = String(producto.PrecioUnitario)
-                StockField.text = String(producto.Stock)
+                PrecioUnitarioField.text = String(producto.PrecioUnitario!)
+                StockField.text = String(producto.Stock!)
                // IdProveedorField.text = String(producto.Proveedor.IdProveedor)
-                IdDepartamentoField.text = String(producto.Departamento.IdDepartamento)
+                IdDepartamentoField.text = String(producto.Departamento!.IdDepartamento)
                 DescripcionField.text = producto.Descripcion
                 
                 if producto.Imagen == nil{
@@ -158,7 +158,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                 imageString = imageData.base64EncodedString(options: .lineLength64Characters)
             }
             
-            productoModel = Producto(IdProducto: 0, Nombre: Nombre, PrecioUnitario: Double(PrecioUnitario)!, Stock: Int(Stock)!, Descripcion: Descripcion, Imagen: imageString, Proveedor: Proveedor(IdProveedor: Int(idProveedor!), Nombre: "", Telefono: ""), Departamento: Departamento(IdDepartamento: Int(IdDepartamento)!, Nombre: "", Area: Area(IdArea: 0, Nombre: "")))
+            productoModel = Producto(IdProducto: 0, Nombre: Nombre, PrecioUnitario: Double(PrecioUnitario)!, Stock: Int(Stock)!, Descripcion: Descripcion, Imagen: imageString, Proveedor: Proveedor(IdProveedor: Int(idProveedor!), Nombre: "", Telefono: ""), Departamento: Departamento(IdDepartamento: Int(idDepartamento!), Nombre: "", Area: Area(IdArea: 0, Nombre: "")))
             
             let result = productoViewModel.Add(producto: productoModel!)
             
@@ -226,7 +226,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                 imageString = imageData.base64EncodedString(options: .lineLength64Characters)
             }
             
-            productoModel = Producto(IdProducto: Int(idProducto!), Nombre: Nombre, PrecioUnitario: Double(PrecioUnitario)!, Stock: Int(Stock)!, Descripcion: Descripcion, Imagen: imageString, Proveedor: Proveedor(IdProveedor: Int(idProveedor!), Nombre: "", Telefono: ""), Departamento: Departamento(IdDepartamento: Int(IdDepartamento)!, Nombre: "", Area: Area(IdArea: 0, Nombre: "")))
+            productoModel = Producto(IdProducto: Int(idProducto!), Nombre: Nombre, PrecioUnitario: Double(PrecioUnitario)!, Stock: Int(Stock)!, Descripcion: Descripcion, Imagen: imageString, Proveedor: Proveedor(IdProveedor: Int(idProveedor!), Nombre: "", Telefono: ""), Departamento: Departamento(IdDepartamento: Int(idDepartamento!), Nombre: "", Area: Area(IdArea: 0, Nombre: "")))
             
             //let result = productoViewModel.Update(producto: productoModel!)
             let result = productoViewModel.Update(producto: productoModel!,IdUpdate: Int(idProducto!))

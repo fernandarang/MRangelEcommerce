@@ -87,7 +87,7 @@ extension DetalleViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetalleTableViewCell
         cell.Nombrelbl.text = productos[indexPath.row].Nombre
-        cell.Preciolbl.text = "$ \(String(productos[indexPath.row].PrecioUnitario))"
+        cell.Preciolbl.text = "$ \(String(productos[indexPath.row].PrecioUnitario!))"
         cell.Descripcionlbl.text = productos[indexPath.row].Descripcion
         
         if productos[indexPath.row].Imagen == ""{

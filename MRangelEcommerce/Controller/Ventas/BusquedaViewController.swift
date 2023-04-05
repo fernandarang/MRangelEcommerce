@@ -90,7 +90,7 @@ extension BusquedaViewController {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AreaCell", for: indexPath) as! AreaCollectionViewCell
         cell.Nombrelbl.text = areas[indexPath.row].Nombre
-        cell.ImagenCell.image = UIImage(named: areas[indexPath.row].Nombre)
+        cell.ImagenCell.image = UIImage(named: areas[indexPath.row].Nombre!)
         
         // Configure the cell
         

@@ -67,23 +67,9 @@ class PDFViewController: UIViewController {
             for producto in productos {
                             cursor = generateProductoText(producto: producto, context: context, cursorY: cursor, pdfSize: pageRect.size)
                         }
-//            for departamento in departamentos {
-//                cursor = generateDepartamentoText(departamento: departamento, context: context, cursorY: cursor, pdfSize: pageRect.size)
-//                        }
                     }
                     return data
         }
-    
-//    func generateDepartamentoText(departamento: Departamento, context: UIGraphicsPDFRendererContext, cursorY: CGFloat, pdfSize: CGSize) -> CGFloat{
-//        var cursor = cursorY
-//        let leftMargin : CGFloat = 74
-//
-//        if let Departamento = departamento.Nombre{
-//                        cursor = context.addSingleLineText(fontSize: 12, weight: .thin, text: "Departamento: \(Departamento)", indent: leftMargin, cursor: cursor, pdfSize: pdfSize, annotation: nil, annotationColor: nil)
-//                        cursor+=2
-//                    }
-//        return cursor
-//    }
     
     func generateProductoText(producto: Producto, context: UIGraphicsPDFRendererContext, cursorY: CGFloat, pdfSize: CGSize) -> CGFloat {
             var cursor = cursorY
